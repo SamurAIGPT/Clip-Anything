@@ -1,374 +1,118 @@
-# AFRO-CLIPZ 🎬
+# Clip Anything
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template)
+[![GitHub stars](https://img.shields.io/github/stars/SamurAIGPT/Clip-Anything?style=social)](https://github.com/SamurAIGPT/Clip-Anything/stargazers)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-Clip any moment from any video with AI-powered prompts
+**Multimodal AI video clipping** - Extract any moment from any video using natural language prompts. Just describe what you're looking for, and AI will find and clip it for you.
 
-Multimodal AI clipping that lets you clip any moment from any video using visual, audio, and sentiment cues
+![Clip Anything Demo](https://github.com/user-attachments/assets/9689a74c-598a-4aab-b02e-54673941c2b9)
 
-Just type your prompt.
+## Tutorials
 
-AI will clip the right moments for you from any video.
+- **YouTube**: [Watch Tutorial](https://youtu.be/R_3kexWz4TU)
+- **Medium**: [Read Article](https://medium.com/@anilmatcha/clipanything-free-ai-video-editor-in-python-tutorial-526f7a972829)
 
-## ✨ New: Zero-Secrets Railway Deployment
+## Features
 
-This repository now includes a **complete zero-secrets deployment architecture** that allows you to deploy on Railway (or Coolify) without requiring any API keys or secrets!
+- **Natural Language Prompts** - Describe the moment you want in plain English
+- **Multimodal Analysis** - Understands visual, audio, and sentiment cues
+- **Smart Scene Detection** - Identifies objects, actions, emotions, and text
+- **Virality Scoring** - Rates each scene for potential engagement
+- **Customizable Clips** - Tailor output to your exact specifications
 
-### 🚀 Quick Deploy
+## How It Works
 
-**Deploy to Railway in one click:**
-- ✅ No secrets required
-- ✅ Works immediately  
-- ✅ Free tier optimized
-- ✅ Auto-scaling protection
-
-**Features:**
-- 🔐 Zero-secrets architecture with safe stubbing
-- 💰 Cost protection and automatic monitoring
-- 🔧 Maintenance mode with auto-migration
-- 🌐 Multi-platform support (Railway, Coolify, VPN)
-- 📊 Resource usage guardrails
-
-**[📖 Full Deployment Guide](./DEPLOYMENT.md)** | **[✅ Deployment Checklist](./DEPLOYMENT_CHECKLIST.md)**
-
-### Resources
-
-- **Youtube Tutorial** → https://youtu.be/R_3kexWz4TU
-- **Medium Article** → https://medium.com/@anilmatcha/clipanything-free-ai-video-editor-in-python-tutorial-526f7a972829
-- **API Documentation** → https://docs.vadoo.tv/docs/guide/create-ai-clips
-
-![hqdefault](https://github.com/user-attachments/assets/9689a74c-598a-4aab-b02e-54673941c2b9)
-
-### Properties
-
-##### Advanced Video Analysis
-
-Harness cutting-edge technology to analyze every aspect of your video. Our state-of-the-art system evaluates each frame, combining visual, audio, and sentiment cues to identify objects, scenes, actions, sounds, emotions, texts, and more. Each scene is rated for its potential virality, giving you insights into what makes your content compelling.
-
-##### Customizable Video Clipping
-
-Tailor your video clips to your exact needs. Whether you're looking to compile highlights from a sports game or showcase the best moments from a travel vlog, simply enter your prompts. We'll personalize your clips, automatically capturing key moments to align with your vision.
-
-##### Demo Input -> https://www.youtube.com/watch?v=U9mJuUkhUzk
-
-##### Output Video -> https://github.com/SamurAIGPT/ClipAnything/blob/main/edited_output.mp4
-
----
-
-## 🚀 Deployment Options
-
-### Railway (Recommended)
-
-Deploy with zero configuration:
-
-```bash
-# Install Railway CLI
-npm install -g @railway/cli
-
-# Login and deploy
-railway login
-railway init
-railway up
+```
+Video Input → AI Analysis → Prompt Matching → Clip Extraction → Output Video
 ```
 
-✅ **Zero-Secrets Mode (Default)**
-- No API keys needed
-- Mock AI responses
-- Safe for demos
-- Free tier friendly
+### Advanced Video Analysis
 
-✅ **Full Integration Mode (Optional)**
-- Set `GROQ_API_KEY` environment variable
-- Real AI processing
-- Production ready
+The AI evaluates every frame of your video:
+- **Visual**: Objects, scenes, actions, faces
+- **Audio**: Speech, music, sound effects
+- **Sentiment**: Emotions, reactions, tone
+- **Text**: On-screen text and captions
 
-**[📖 Railway Deployment Guide](./DEPLOYMENT.md)**
+### Prompt-Based Clipping
 
-### Coolify (Self-Hosted)
+Simply describe what you want:
+- "Find all the funny moments"
+- "Clip when someone scores a goal"
+- "Extract the product reveal"
+- "Get the emotional reaction shots"
 
-Deploy on your own infrastructure:
+## Demo
 
-```bash
-# Follow setup guide
-# Configure git repository
-# Deploy with one click
-```
+**Input Video**: [YouTube Example](https://www.youtube.com/watch?v=U9mJuUkhUzk)
 
-**[📖 Coolify Setup Guide](./COOLIFY_SUPPORT.md)**
+**Output Video**: [See Result](https://github.com/SamurAIGPT/ClipAnything/blob/main/edited_output.mp4)
 
-### Hostinger VPN (Advanced)
-
-Deploy behind VPN for enhanced security:
-
-**[📖 VPN Deployment Guide](./HOSTINGER_VPN_DEPLOYMENT.md)**
-
----
-
-## 💰 Cost Protection
-
-Built-in guardrails prevent runaway costs:
-
-- ✅ Resource usage monitoring
-- ✅ Automatic shutdown on limit
-- ✅ Maintenance mode activation
-- ✅ Migration to Coolify guidance
-
-**Configuration:**
-```bash
-ENABLE_COST_MONITORING=true
-FREE_TIER_LIMIT_MB=500
-AUTO_SHUTDOWN_ON_LIMIT=true
-```
-
----
-
-## 🔐 Secret Management
-
-### Zero-Secrets Architecture
-
-The application works without any API keys:
-- External integrations safely stubbed
-- Mock responses for testing
-- No secrets in repository
-- Safe for public deployment
-
-### Adding Real API Keys (Optional)
-
-1. **Get API Key**
-   - Visit https://console.groq.com/keys
-   - Create free account
-   - Generate API key
-
-2. **Set Environment Variable**
-   ```bash
-   # Railway
-   railway variables set GROQ_API_KEY=gsk_your_key_here
-   
-   # Coolify
-   # Add via dashboard: GROQ_API_KEY=gsk_your_key_here
-   
-   # Local
-   export GROQ_API_KEY=gsk_your_key_here
-   ```
-
-3. **Redeploy**
-   - Application automatically switches to full AI mode
-   - Real processing enabled
-   - No code changes needed
-
-**[📖 Secret Management Guide](./.agents)**
-
----
-
-## 📦 Installation & Usage
-
-### Local Development
+## Quick Start
 
 ```bash
-# Clone repository
-git clone https://github.com/executiveusa/AFRO-CLIPZ.git
-cd AFRO-CLIPZ
+# Clone the repository
+git clone https://github.com/SamurAIGPT/Clip-Anything.git
+cd Clip-Anything
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run application (enhanced version with zero-secrets)
-python app_enhanced.py
-
-# Or run original version
-python app.py
+# Run the clipper
+python clip_anything.py --video input.mp4 --prompt "your prompt here"
 ```
 
-### Environment Setup
+## API Alternative
 
-```bash
-# Copy template
-cp .env.example .env
-
-# Edit .env with your settings
-nano .env
-
-# Key variables:
-# - GROQ_API_KEY: Your API key (or 'stub-key' for stub mode)
-# - WHISPER_MODEL: base, small, medium, large
-# - FREE_TIER_LIMIT_MB: Memory limit for cost protection
-```
-
-### Usage
+Want production-ready clipping at scale? Use the [Vadoo AI Clipping API](https://docs.vadoo.tv/docs/guide/create-ai-clips):
 
 ```python
-# Basic usage
-from app_enhanced import main
-main()
+import requests
 
-# With custom query
-import os
-os.environ['USER_QUERY'] = "Find all clips about artificial intelligence"
-main()
+response = requests.post(
+    "https://viralapi.vadoo.tv/api/create_clips",
+    headers={"X-API-KEY": "your_api_key"},
+    json={
+        "video_url": "https://example.com/video.mp4",
+        "prompt": "highlight moments"
+    }
+)
 ```
 
----
+## Use Cases
 
-## 📚 Documentation
+| Use Case | Example Prompt |
+|----------|----------------|
+| Sports Highlights | "Extract all scoring plays" |
+| Podcast Clips | "Find the most insightful moments" |
+| Travel Vlogs | "Clip the scenic views" |
+| Tutorials | "Get the key demonstration steps" |
+| Interviews | "Find emotional reactions" |
 
-- **[DEPLOYMENT.md](./DEPLOYMENT.md)** - Complete deployment guide
-- **[.agents](./.agents)** - Secret specifications and schema
-- **[COOLIFY_SUPPORT.md](./COOLIFY_SUPPORT.md)** - Coolify setup instructions
-- **[COOLIFY_MIGRATION.md](./COOLIFY_MIGRATION.md)** - Railway → Coolify migration
-- **[HOSTINGER_VPN_DEPLOYMENT.md](./HOSTINGER_VPN_DEPLOYMENT.md)** - VPN setup guide
-- **[master.secrets.json.template](./master.secrets.json.template)** - Secret management template
+## Tech Stack
 
----
+| Component | Purpose |
+|-----------|---------|
+| GPT-4V | Visual understanding |
+| Whisper | Audio transcription |
+| FFmpeg | Video processing |
+| OpenCV | Frame analysis |
 
-## 🔧 Configuration Files
+## Contributing
 
-- **`railway.toml`** - Railway deployment configuration
-- **`railway.json`** - Service definitions
-- **`nixpacks.toml`** - Build configuration
-- **`Procfile`** - Process definitions
-- **`.env.example`** - Environment variables template
-- **`.gitignore`** - Excludes secrets from git
-- **`maintenance.html`** - Maintenance mode page
+Contributions are welcome! Please feel free to submit a Pull Request.
 
----
+## Follow for Updates
 
-## 🛠️ Features
+- [Anil Chandra Naidu Matcha](https://twitter.com/matchaman11)
+- [Ankur Singh](https://twitter.com/ankur_maker)
 
-### Core Features
-- 🎬 AI-powered video clipping
-- 🎙️ Automatic transcription with Whisper
-- 🤖 Intelligent segment selection with LLM
-- ✂️ Automated video editing
-- 🎨 Smooth transitions and effects
+## Related Projects
 
-### Deployment Features
-- 🚀 Zero-secrets architecture
-- 💰 Cost protection guardrails
-- 🔧 Automatic maintenance mode
-- 🌐 Multi-platform support
-- 📊 Resource monitoring
-- 🔄 Migration automation
+- [AI-Youtube-Shorts-Generator](https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator) - Auto-generate YouTube Shorts
+- [Text-To-Video-AI](https://github.com/SamurAIGPT/Text-To-Video-AI) - Generate videos from text
 
-### Advanced Features
-- 🔐 Master secrets management
-- 🌍 VPN deployment support
-- 📈 Usage tracking
-- 🚨 Auto-shutdown on limits
-- 📋 Migration checklists
+## License
 
----
-
-## 🔍 How It Works
-
-1. **Transcription** 
-   - Extract audio from video
-   - Generate transcript with Whisper
-   - Segment by timestamps
-
-2. **AI Analysis** (with API key) / Mock Selection (without)
-   - Analyze transcript against user query
-   - Select relevant conversations
-   - Identify optimal clip boundaries
-
-3. **Video Editing**
-   - Extract selected segments
-   - Apply smooth transitions
-   - Combine into final video
-   - Export with original quality
-
----
-
-## 🆘 Troubleshooting
-
-### Application Won't Start
-```bash
-# Check Python version
-python3 --version  # Should be 3.12+
-
-# Check dependencies
-pip install -r requirements.txt
-
-# Check logs
-railway logs  # On Railway
-```
-
-### API Not Working
-```bash
-# Verify API key is set
-echo $GROQ_API_KEY
-
-# Check stub mode indicator in logs
-# Look for: "⚠️ STUB MODE: Using mock AI responses"
-
-# Set real API key
-export GROQ_API_KEY=gsk_your_key_here
-```
-
-### Memory Limit Exceeded
-```bash
-# Increase limit
-railway variables set FREE_TIER_LIMIT_MB=1000
-
-# Or migrate to Coolify
-# See COOLIFY_MIGRATION.md
-```
-
----
-
-## 📊 System Requirements
-
-### Local Development
-- Python 3.12+
-- FFmpeg
-- 2GB+ RAM
-- 2GB+ disk space
-
-### Railway Deployment
-- Free tier: 512MB RAM
-- Recommended: Hobby tier (2GB RAM)
-
-### Coolify Deployment
-- VPS with 2GB+ RAM
-- Docker support
-- Ubuntu 20.04+ recommended
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create feature branch
-3. Make changes
-4. Test thoroughly
-5. Submit pull request
-
----
-
-## 📄 License
-
-See [LICENSE](./LICENSE) file for details.
-
----
-
-## 🙏 Credits
-
-- Original ClipAnything: [@anilmatcha](https://github.com/anilmatcha)
-- OpenAI Whisper: [OpenAI](https://github.com/openai/whisper)
-- Groq API: [Groq](https://groq.com)
-- Railway: [Railway.app](https://railway.app)
-- Coolify: [Coolify](https://coolify.io)
-
----
-
-## 📞 Support
-
-- **GitHub Issues**: https://github.com/executiveusa/AFRO-CLIPZ/issues
-- **Deployment Help**: See [DEPLOYMENT.md](./DEPLOYMENT.md)
-- **Migration Guide**: See [COOLIFY_MIGRATION.md](./COOLIFY_MIGRATION.md)
-
----
-
-**Status**: ✅ Production Ready (Zero-Secrets Mode)
-
-**Last Updated**: 2025-12-04
+MIT License - see [LICENSE](LICENSE) for details.
