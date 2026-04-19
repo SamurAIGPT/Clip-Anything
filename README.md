@@ -8,6 +8,11 @@
 
 ![Clip Anything Demo](https://github.com/user-attachments/assets/9689a74c-598a-4aab-b02e-54673941c2b9)
 
+**Looking for an api to build your own Opus-clip style product ? Check the api below**
+
+https://muapi.ai/playground/autocrop
+https://muapi.ai/playground/ai-clipping
+
 ## Tutorials
 
 - **YouTube**: [Watch Tutorial](https://youtu.be/R_3kexWz4TU)
