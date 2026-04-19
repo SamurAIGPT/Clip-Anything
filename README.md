@@ -11,6 +11,7 @@
 **Looking for an api to build your own Opus-clip style product ? Check the api below**
 
 https://muapi.ai/playground/autocrop
+
 https://muapi.ai/playground/ai-clipping
 
 ## Tutorials
